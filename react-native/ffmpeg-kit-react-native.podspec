@@ -108,7 +108,9 @@ Pod::Spec.new do |s|
       ss.source_files      = '**/FFmpegKitReactNativeModule.m',
                              '**/FFmpegKitReactNativeModule.h'
       ss.dependency 'ffmpeg-kit-ios-full', "6.0"
-      ss.ios.deployment_target = '12.1'
+      ss.resource = 'https://github.com/Yoliani/ffmpeg-kit/releases/download/react.native.v6.0.2/ffmpeg-kit-full-v6.0.2-ios-xcframework.zip'
+      ss.ios.deployment_target = '15'
+
   end
 
   s.subspec 'full-lts' do |ss|
